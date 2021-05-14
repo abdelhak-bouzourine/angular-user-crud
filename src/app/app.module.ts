@@ -5,16 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {NbIconModule, NbLayoutModule, NbMenuModule, NbSidebarModule, NbThemeModule, NbButtonModule} from '@nebular/theme';
+import { NbIconModule, NbLayoutModule, NbMenuModule, NbSidebarModule, NbThemeModule, NbButtonModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HttpClientModule } from '@angular/common/http';
 import { NbDummyAuthStrategy, NbAuthModule } from '@nebular/auth';
 import { HomeComponent } from './home/home.component';
+import { ConnectChartsComponent } from './connect-charts/connect-charts.component';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ConnectChartsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,8 +29,9 @@ import { HomeComponent } from './home/home.component';
     NbLayoutModule,
     NbSidebarModule.forRoot(),
     NbMenuModule.forRoot(),
-    NbThemeModule.forRoot({ name: 'corporate' }),  
+    NbThemeModule.forRoot({ name: 'corporate' }),
     NbButtonModule,
+    NgxEchartsModule,
 
     NbAuthModule.forRoot({
       strategies: [
