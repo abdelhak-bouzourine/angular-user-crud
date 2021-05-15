@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import {
   NbAuthComponent,
   NbLoginComponent,
@@ -9,7 +9,7 @@ import {
   NbRequestPasswordComponent,
   NbResetPasswordComponent,
 } from '@nebular/auth';
-import { UsersComponent } from './users/users.component';
+import { UsersComponent } from './components/users/users.component';
 
 
 export const routes: Routes = [

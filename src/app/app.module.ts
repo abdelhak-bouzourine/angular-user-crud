@@ -9,12 +9,12 @@ import { NbIconModule, NbLayoutModule, NbMenuModule, NbSidebarModule, NbThemeMod
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HttpClientModule } from '@angular/common/http';
 import { NbDummyAuthStrategy, NbAuthModule } from '@nebular/auth';
-import { HomeComponent } from './home/home.component';
-import { ConnectChartsComponent } from './connect-charts/connect-charts.component';
+import { HomeComponent } from './components/home/home.component';
+import { ConnectChartsComponent } from './components/connect-charts/connect-charts.component';
 import { NgxEchartsModule } from 'ngx-echarts';
-import { UsersComponent } from './users/users.component';
-import { UserComponent } from './user/user.component';
-import { AddUserComponent } from './add-user/add-user.component';
+import { UsersComponent } from './components/users/users.component';
+import { UserComponent } from './components/user/user.component';
+import { AddUserComponent } from './components/add-user/add-user.component';
 
 @NgModule({
   declarations: [
