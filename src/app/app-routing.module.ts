@@ -9,20 +9,25 @@ import {
   NbRequestPasswordComponent,
   NbResetPasswordComponent,
 } from '@nebular/auth';
+import { UsersComponent } from './users/users.component';
 
 
 export const routes: Routes = [
   // ...
   {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'users',
+    component: UsersComponent
+  },
+
 
   {
     path: 'auth',

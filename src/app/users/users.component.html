@@ -1,1 +1,23 @@
-<p>users works!</p>
+<!-- TODO: move sidebar header and footer to a module (Users)-->
+
+<nb-layout>
+
+  <nb-layout-header fixed>
+    <nb-icon (click)="toggleSidebar()" class="sidebar-toggle" icon="menu-2-outline"></nb-icon>
+    <img src="./favicon.ico" style="height: 60px;">
+  </nb-layout-header>
+
+  <nb-sidebar class="menu-sidebar" responsive start>
+    <nb-menu [items]="items"></nb-menu>
+  </nb-sidebar>
+
+  <nb-layout-column>
+    <app-add-user></app-add-user>
+    <app-user></app-user>
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+    <span>&#169; Djezzy 2021 | All rights reserved</span>
+  </nb-layout-footer>
+
+</nb-layout>
