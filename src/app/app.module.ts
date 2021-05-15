@@ -31,7 +31,9 @@ import { NgxEchartsModule } from 'ngx-echarts';
     NbMenuModule.forRoot(),
     NbThemeModule.forRoot({ name: 'corporate' }),
     NbButtonModule,
-    NgxEchartsModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts')
+    }),
 
     NbAuthModule.forRoot({
       strategies: [
