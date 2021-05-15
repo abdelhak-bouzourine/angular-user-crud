@@ -15,6 +15,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
 import { UsersComponent } from './components/users/users.component';
 import { UserComponent } from './components/user/user.component';
 import { AddUserComponent } from './components/add-user/add-user.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AddUserComponent } from './components/add-user/add-user.component';
     ConnectChartsComponent,
     UsersComponent,
     UserComponent,
-    AddUserComponent
+    AddUserComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
