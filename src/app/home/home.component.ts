@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   items: NbMenuItem[] = [
     {
-      title: 'Home',
+      title: 'Dashboard',
       icon: 'home-outline',
       link: '/home',
       home: true
