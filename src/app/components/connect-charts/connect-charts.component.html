@@ -1,10 +1,10 @@
-<div nz-row>
-  <div nz-col nzSpan="12">
-    <h5> Chart1 </h5>
-    <div id="chart1" echarts [options]="options" theme="macarons" class="demo-chart"></div>
-  </div>
-  <div nz-col nzSpan="12">
-    <h5> Chart2 </h5>
-    <div id="chart2" echarts [options]="options" theme="macarons" class="demo-chart"></div>
-  </div>
+<div class="button-groups">
+  <button (click)="theme = 'undefined'" nbButton status="basic">default</button>
+  <button (click)="theme = 'dark'" nbButton status="basic">dark</button>
 </div>
+
+<div echarts [options]="options" [theme]="theme" class="demo-chart"></div>
+<br>
+<br>
+<br>
+<div echarts [options]="options2 | async" class="demo-chart-600"></div>

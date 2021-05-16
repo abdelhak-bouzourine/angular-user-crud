@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "name": "Abdelhak Bouzourine",
-      "age": 30,
-      "sexe": "M",
-      "image": "https://www.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg",
-      "id": 11
-    },
-    {
       "name": "abdou",
       "age": 71,
       "sexe": "M",
@@ -20,6 +13,19 @@
       "sexe": "F",
       "image": "https://blog.hubspot.com/hubfs/How%20to%20Edit%20%26%20Customize%20User%20Roles%20in%20WordPress.jpeg",
       "id": 13
+    },
+    {
+      "name": "akram",
+      "age": 22,
+      "sexe": "M",
+      "id": 14
+    },
+    {
+      "name": "bouchra",
+      "age": 35,
+      "sexe": "F",
+      "image": "https://images.unsplash.com/photo-1604961410267-9f76682d25e9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2lybCUyMHByb2ZpbGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
+      "id": 15
     }
   ]
 }
