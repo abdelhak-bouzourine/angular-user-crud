@@ -58,7 +58,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     }),
     FontAwesomeModule,
     NbUserModule,
-    NbIconModule,
     NbCardModule
 
   ],
