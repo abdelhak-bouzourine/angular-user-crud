@@ -2,23 +2,19 @@
 <app-add-user-header></app-add-user-header>
 <form *ngIf="showAddUser" class="add-from" (ngSubmit)="onSubmit()">
   <div class="form-control">
-    <label for="name">Name</label>
-    <input type="text" name="name" [(ngModel)]="name" id="name" placeholder="Add name" />
+    <input type="text" nbInput fullWidth name="name" [(ngModel)]="name" id="name" placeholder="name" />
   </div>
   <div class="form-control">
-    <label for="birthdate">Birthdate</label>
-    <input type="text" name="birthdate" [(ngModel)]="birthdate" id="birthdate" placeholder="Add Birthdate" />
+    <input type="text" nbInput fullWidth name="birthdate" [(ngModel)]="birthdate" id="birthdate" placeholder="Birthdate" />
   </div>
   <div class="form-control">
-    <label for="sexe">Sexe</label>
-    <input type="text" name="sexe" [(ngModel)]="sexe" id="sexe" placeholder="Add sexe" />
+    <input type="text" nbInput fullWidth name="sexe" [(ngModel)]="sexe" id="sexe" placeholder="Sexe" />
   </div>
   <div class="form-control">
-    <label for="image">Image</label>
-    <input type="text" name="image" [(ngModel)]="image" id="image" placeholder="Add image" />
+    <input type="text" nbInput fullWidth name="image" [(ngModel)]="image" id="image" placeholder="Image url" />
   </div>
 
-  <input type="submit" value="Add User" class="btn btn-primary"/>
+  <input type="submit" value="Add User" nbButton status="primary"/>
 </form>
 </div>
 

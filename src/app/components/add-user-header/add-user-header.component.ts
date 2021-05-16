@@ -9,7 +9,7 @@ import { UiService } from 'src/app/services/ui.service';
   styleUrls: ['./add-user-header.component.scss']
 })
 export class AddUserHeaderComponent implements OnInit {
-  title: string = 'Manage Users';
+  title: string = 'Add Users';
   showAddUser!: boolean;
   subscription!: Subscription;
 
