@@ -12,7 +12,7 @@
   </nb-sidebar>
 
   <nb-layout-column>
-    <app-add-user></app-add-user>
+    <app-add-user (onAddUser)="addUser($event)"></app-add-user>
     <app-user></app-user>
   </nb-layout-column>
 

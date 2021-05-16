@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NbMenuItem, NbSidebarService } from '@nebular/theme';
+import {UserService} from '../../services/user.service'
+import {User} from '../../User'
 
 @Component({
   selector: 'app-users',
@@ -22,15 +24,35 @@ export class UsersComponent implements OnInit {
     }
   ];
 
-  constructor(private readonly sidebarService: NbSidebarService) {
+  users: User[] = [];
+
+  constructor(private readonly sidebarService: NbSidebarService, private userService: UserService) {
   }
 
   ngOnInit(): void {
+    this.userService.getUsers().subscribe((users) => this.users = users)
   }
 
   toggleSidebar(): boolean {
     this.sidebarService.toggle();
     return false;
+  }
+
+
+  deleteUser(user: User){
+    this.userService.deleteUser(user).subscribe((users) => this.users = this.users.filter(u => u.id !== user.id))
+  }
+
+  /**
+   toggleReminder(task: Task){
+    task.reminder = !task.reminder;
+    this.userService.updateTaskReminder(task).subscribe();
+  }
+   */
+
+
+  addUser(user: User){
+    this.userService.addUser(user).subscribe((user) => this.users.push(user))
   }
 
 }

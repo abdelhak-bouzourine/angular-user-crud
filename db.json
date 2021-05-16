@@ -1,7 +1,22 @@
 {
-  "users":[
+  "users": [
     {
-      
+      "name": "jhon",
+      "birthday": "05/05/2055",
+      "sexe": "M",
+      "id": 1
+    },
+    {
+      "name": "jacinda",
+      "birthday": "06/06/2022",
+      "sexe": "F",
+      "id": 4
+    },
+    {
+      "name": "abdou",
+      "birthdate": "05/08/1990",
+      "sexe": "M",
+      "id": 5
     }
   ]
 }

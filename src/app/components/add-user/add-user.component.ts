@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, EventEmitter, Output, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { UiService } from 'src/app/services/ui.service';
+import { User } from 'src/app/User';
 
 @Component({
   selector: 'app-add-user',
@@ -9,24 +9,37 @@ import { UiService } from 'src/app/services/ui.service';
   styleUrls: ['./add-user.component.scss']
 })
 export class AddUserComponent implements OnInit {
-
-  title: string = 'Task traker';
-  showAddTask!: boolean;
+  @Output() onAddUser: EventEmitter<User> = new EventEmitter();
+  name!: string;
+  birthdate!: string;
+  sexe!: string;
+  showAddUser!: boolean;
   subscription!: Subscription;
 
-  constructor(private uiServise:UiService, private router: Router) {
-    this.subscription = this.uiServise.onToggle().subscribe((value) => (this.showAddTask = value));
+  constructor(private uiService: UiService) {
+    this.subscription = this.uiService.onToggle().subscribe((value) => (this.showAddUser = value));
   }
 
   ngOnInit(): void {
   }
 
-  toggleAddTask(){
-    this.uiServise.toggleAddTask();
-  }
+  onSubmit(){
+    if(!this.name){
+      alert('add name');
+      return;
+    }
 
-  hasRoute(route: string){
-    return this.router.url === route;
+    const newUser = {
+      name: this.name,
+      birthdate: this.birthdate,
+      sexe: this.sexe,
+    }
+
+    this.onAddUser.emit(newUser);
+
+    this.name = '';
+    this.birthdate = '';
+    this.sexe = '';
   }
 
 

@@ -16,6 +16,8 @@ import { UsersComponent } from './components/users/users.component';
 import { UserComponent } from './components/user/user.component';
 import { AddUserComponent } from './components/add-user/add-user.component';
 import { ButtonComponent } from './components/button/button.component';
+import { AddUserHeaderComponent } from './components/add-user-header/add-user-header.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { ButtonComponent } from './components/button/button.component';
     UsersComponent,
     UserComponent,
     AddUserComponent,
-    ButtonComponent
+    ButtonComponent,
+    AddUserHeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { ButtonComponent } from './components/button/button.component';
     NbMenuModule.forRoot(),
     NbThemeModule.forRoot({ name: 'corporate' }),
     NbButtonModule,
+    FormsModule,
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts')
     }),
