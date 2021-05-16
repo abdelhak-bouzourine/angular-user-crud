@@ -1,23 +1,25 @@
 {
   "users": [
     {
+      "name": "Abdelhak Bouzourine",
+      "age": 30,
+      "sexe": "M",
+      "image": "https://www.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg",
+      "id": 11
+    },
+    {
       "name": "abdou",
-      "birthdate": "05/08/1990",
-      "sexe": "M",
-      "id": 5
-    },
-    {
-      "name": "Conduite de projet et cahier des charges",
-      "birthdate": "05/08/1991",
-      "sexe": "M",
-      "id": 8
-    },
-    {
-      "name": "Tony Ferguison",
-      "birthdate": "05/08/1991",
+      "age": 71,
       "sexe": "M",
       "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
-      "id": 10
+      "id": 12
+    },
+    {
+      "name": "abdou",
+      "age": 15,
+      "sexe": "F",
+      "image": "https://blog.hubspot.com/hubfs/How%20to%20Edit%20%26%20Customize%20User%20Roles%20in%20WordPress.jpeg",
+      "id": 13
     }
   ]
 }

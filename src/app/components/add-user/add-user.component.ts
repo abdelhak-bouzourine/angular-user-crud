@@ -11,7 +11,7 @@ import { User } from 'src/app/User';
 export class AddUserComponent implements OnInit {
   @Output() onAddUser: EventEmitter<User> = new EventEmitter();
   name!: string;
-  birthdate!: string;
+  age!: number;
   sexe!: string;
   image!: string;
   showAddUser!: boolean;
@@ -32,7 +32,7 @@ export class AddUserComponent implements OnInit {
 
     const newUser = {
       name: this.name,
-      birthdate: this.birthdate,
+      age: this.age,
       sexe: this.sexe,
       image: this.image,
     }
@@ -40,7 +40,7 @@ export class AddUserComponent implements OnInit {
     this.onAddUser.emit(newUser);
 
     this.name = '';
-    this.birthdate = '';
+    this.age;
     this.sexe = '';
     this.image = '';
   }
