@@ -13,7 +13,10 @@
 
   <nb-layout-column>
     <app-add-user (onAddUser)="addUser($event)"></app-add-user>
-    <app-user></app-user>
+    
+    <app-user *ngFor="let user of users" [user]="user"
+    (onDeleteUser)="deleteUser(user)"
+    ></app-user>
   </nb-layout-column>
 
   <nb-layout-footer fixed>

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { NbIconModule, NbLayoutModule, NbMenuModule, NbSidebarModule, NbThemeModule, NbButtonModule } from '@nebular/theme';
+import { NbIconModule, NbLayoutModule, NbMenuModule, NbSidebarModule, NbThemeModule, NbButtonModule, NbUserModule, NbCardModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HttpClientModule } from '@angular/common/http';
 import { NbDummyAuthStrategy, NbAuthModule } from '@nebular/auth';
@@ -18,6 +18,7 @@ import { AddUserComponent } from './components/add-user/add-user.component';
 import { ButtonComponent } from './components/button/button.component';
 import { AddUserHeaderComponent } from './components/add-user-header/add-user-header.component';
 import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,11 @@ import { FormsModule } from '@angular/forms';
         }),
       ],
       forms: {},
-    })
+    }),
+    FontAwesomeModule,
+    NbUserModule,
+    NbIconModule,
+    NbCardModule
 
   ],
   providers: [],

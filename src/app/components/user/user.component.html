@@ -1,1 +1,21 @@
-<p>user works!</p>
+<nb-card>
+  <nb-card-body>
+
+    <nb-user size="large"
+             name="{{ user.name }}"
+             title="{{ user.birthdate }}"
+             picture="{{ user.image }}">
+
+    </nb-user>
+
+    <fa-icon
+    (click)="onDelete(user)"
+    [ngStyle]="{color: 'red'}"
+    [icon]="faTrash">
+    </fa-icon>
+
+  </nb-card-body>
+
+</nb-card>
+
+

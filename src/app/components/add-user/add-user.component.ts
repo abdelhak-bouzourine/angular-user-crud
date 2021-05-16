@@ -13,6 +13,7 @@ export class AddUserComponent implements OnInit {
   name!: string;
   birthdate!: string;
   sexe!: string;
+  image!: string;
   showAddUser!: boolean;
   subscription!: Subscription;
 
@@ -33,6 +34,7 @@ export class AddUserComponent implements OnInit {
       name: this.name,
       birthdate: this.birthdate,
       sexe: this.sexe,
+      image: this.image,
     }
 
     this.onAddUser.emit(newUser);
@@ -40,6 +42,7 @@ export class AddUserComponent implements OnInit {
     this.name = '';
     this.birthdate = '';
     this.sexe = '';
+    this.image = '';
   }
 
 
