@@ -20,8 +20,8 @@ export class AddUserHeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  toggleAddTask(){
-    this.uiServise.toggleAddTask();
+  toggleAddUser(){
+    this.uiServise.toggleAddUser();
   }
 
   hasRoute(route: string){
