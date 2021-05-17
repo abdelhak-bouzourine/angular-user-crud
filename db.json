@@ -2,23 +2,10 @@
   "users": [
     {
       "name": "abdou",
-      "age": 71,
-      "sexe": "M",
-      "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
-      "id": 12
-    },
-    {
-      "name": "abdou",
       "age": 15,
       "sexe": "F",
       "image": "https://blog.hubspot.com/hubfs/How%20to%20Edit%20%26%20Customize%20User%20Roles%20in%20WordPress.jpeg",
       "id": 13
-    },
-    {
-      "name": "akram",
-      "age": 22,
-      "sexe": "M",
-      "id": 14
     },
     {
       "name": "bouchra",

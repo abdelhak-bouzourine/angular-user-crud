@@ -16,15 +16,11 @@
 
   <nb-layout-column>
     <app-add-user (onAddUser)="addUser($event)"></app-add-user>
-    <div class="">
-      <div class="row">
-        <app-user
-          *ngFor="let user of users"
-          [user]="user"
-          (onDeleteUser)="deleteUser(user)"
-        ></app-user>
-      </div>
-    </div>
+    <app-user
+      *ngFor="let user of users"
+      [user]="user"
+      (onDeleteUser)="deleteUser(user)"
+    ></app-user>
   </nb-layout-column>
 
   <nb-layout-footer fixed>

@@ -1,20 +1,20 @@
 <div class="container">
 <app-add-user-header></app-add-user-header>
 <form *ngIf="showAddUser" class="add-from" (ngSubmit)="onSubmit()">
-  <div class="form-control">
-    <input type="text" nbInput fullWidth name="name" [(ngModel)]="name" id="name" placeholder="name" />
-  </div>
-  <div class="form-control">
-    <input type="number" nbInput fullWidth name="age" [(ngModel)]="age" id="birthdate" placeholder="Age" />
-  </div>
-  <div class="form-control">
-    <input type="text" nbInput fullWidth name="sexe" [(ngModel)]="sexe" id="sexe" placeholder="Sexe" />
-  </div>
-  <div class="form-control">
-    <input type="text" nbInput fullWidth name="image" [(ngModel)]="image" id="image" placeholder="Image url" />
-  </div>
 
-  <input type="submit" value="Add User" nbButton status="primary"/>
+    <input type="text" style="margin-bottom: 10px;" nbInput fullWidth fieldSize="large" name="name" [(ngModel)]="name" id="name" placeholder="name" />
+
+    <input type="number" style="margin-bottom: 10px;" nbInput fullWidth fieldSize="large" name="age" [(ngModel)]="age" id="birthdate" placeholder="Age" />
+
+    <input type="text" style="margin-bottom: 10px;" nbInput fullWidth fieldSize="large" name="sexe" [(ngModel)]="sexe" id="sexe" placeholder="Sexe" />
+
+    <input type="text" style="margin-bottom: 15px;" nbInput fullWidth fieldSize="large" name="image" [(ngModel)]="image" id="image" placeholder="Image url" />
+
+    <div style="text-align: right; margin-right: 8px;">
+      <input type="submit"  value="Add User" nbButton status="primary"/>
+    </div>
+
+
 </form>
 </div>
 
