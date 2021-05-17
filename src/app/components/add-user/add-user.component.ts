@@ -16,7 +16,7 @@ export class AddUserComponent implements OnInit {
   image!: string;
   showAddUser!: boolean;
   subscription!: Subscription;
-
+  oldage = this.age;
   constructor(private uiService: UiService) {
     this.subscription = this.uiService.onToggle().subscribe((value) => (this.showAddUser = value));
   }
@@ -40,7 +40,7 @@ export class AddUserComponent implements OnInit {
     this.onAddUser.emit(newUser);
 
     this.name = '';
-    this.age;
+    this.age = this.oldage;
     this.sexe = '';
     this.image = '';
   }

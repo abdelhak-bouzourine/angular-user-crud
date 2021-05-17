@@ -26,6 +26,13 @@
       "sexe": "F",
       "image": "https://images.unsplash.com/photo-1604961410267-9f76682d25e9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2lybCUyMHByb2ZpbGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
       "id": 15
+    },
+    {
+      "name": "abdelhak",
+      "age": 25,
+      "sexe": "M",
+      "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+      "id": 16
     }
   ]
 }
